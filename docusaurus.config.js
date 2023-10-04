@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Acode PLugin Docs',
-  tagline: 'A community made acode plugin documentation',
+  tagline: 'A community driven acode plugin documentation',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
