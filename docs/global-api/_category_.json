@@ -1,0 +1,8 @@
+{
+  "label": "Global API",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "In this section, we explore the comprehensive set of global APIs that empower you to interact with Acode programmatically."
+  }
+}

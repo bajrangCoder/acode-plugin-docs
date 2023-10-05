@@ -1,0 +1,8 @@
+{
+  "label": "Plugin Essentials",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Plugin Essentials — your go-to resource for diving deep into the core aspects of your Acode plugin. This section is designed to provide a comprehensive understanding of both the essential manifest configuration and the pivotal logic residing in the main file of your plugin."
+  }
+}

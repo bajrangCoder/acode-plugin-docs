@@ -1,7 +1,8 @@
 ---
 sidebar_position: 1
+title: Acode-Plugins
 ---
-# Acode-Plugins
+# Acode Plugins
 
 > Welcome to the world of Acode plugins! 🚀
 
