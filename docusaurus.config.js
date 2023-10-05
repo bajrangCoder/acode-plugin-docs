@@ -11,15 +11,15 @@ const config = {
   favicon: "img/logo.png",
 
   // Set the production url of your site here
-  url: "https:bajrangCoder.github.io/",
+  url: "https://acode-plugin-docs.vercel.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/acode-plugin-docs/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "bajrangCoder", // Usually your GitHub org/user name.
-  projectName: "acode-plugin-docs", // Usually your repo name.
+  //organizationName: "bajrangCoder", // Usually your GitHub org/user name.
+ // projectName: "acode-plugin-docs", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
