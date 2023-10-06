@@ -33,6 +33,6 @@ These global APIs provide essential information about asset directories, storage
 
 These global APIs provide vital insights into asset management, storage locations, app capabilities, and system compatibility, enhancing developers' ability to create user-friendly plugins. Here is a very simple example on how to use these APIs:
 ```javascript
-console.log(acode.ASSETS_DIRECTORY) // returns a string like "/path/to/assets"
-console.log(acode.IS_FREE_VERSION) //  logs true if user is using free version of the app, else false
+console.log(ASSETS_DIRECTORY) // returns a string like "/path/to/assets"
+console.log(IS_FREE_VERSION) //  logs true if user is using free version of the app, else false
 ```
