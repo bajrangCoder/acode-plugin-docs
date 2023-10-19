@@ -19,7 +19,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Acode PLugin Dev
+            Acode Plugin Dev
           </Link>
         </div>
       </div>
@@ -31,8 +31,8 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Acode Plugin Development docs">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
