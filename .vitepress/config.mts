@@ -7,10 +7,10 @@ export default defineConfig({
   description: "Community driven detailed acode plugin development guide",
   lastUpdated: true,
   cleanUrls: true,
-  head: [['link', { rel: 'icon', href: '/assets/acode.png' }]],
+  head: [['link', { rel: 'icon', href: '/acode.png' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: "./assets/acode.png",
+    logo: "/acode.png",
     nav: [
       { text: "Home", link: "/" },
       { text: "Docs", link: "/docs" },

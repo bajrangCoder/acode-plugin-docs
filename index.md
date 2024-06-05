@@ -6,7 +6,7 @@ hero:
   text: "Community driven detailed acode plugin development guide"
   tagline: Build and Extend with Ease
   image:
-    src: /assets/acode.png
+    src: /acode.png
     alt: Acode
   actions:
     - theme: brand
