@@ -10,7 +10,7 @@ The `main.js` file acts as the entry point for your Acode plugin. It is executed
 
 ### Access to Acode API
 
-Within `main.js`, you gain access to the Acode API through the global variable [`acode`](./docs/global-apis/acode). This variable serves as your gateway to interact with various Acode methods, enabling seamless integration of your plugin with the editor.
+Within `main.js`, you gain access to the Acode API through the global variable [acode](../global-apis/acode). This variable serves as your gateway to interact with various Acode methods, enabling seamless integration of your plugin with the editor.
 
 ### Registering Your Plugin
 

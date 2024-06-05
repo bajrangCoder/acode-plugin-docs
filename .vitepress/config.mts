@@ -8,7 +8,6 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   head: [['link', { rel: 'icon', href: '/acode.png' }]],
-  ignoreDeadLinks: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/acode.png",
