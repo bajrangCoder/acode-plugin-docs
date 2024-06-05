@@ -1,1 +1,0 @@
-import{_ as t,c as e,o,a1 as i}from"./chunks/framework.BlxYlo1f.js";const _=JSON.parse('{"title":"Url","description":"","frontmatter":{},"headers":[],"relativePath":"utilities/url.md","filePath":"utilities/url.md"}'),r={name:"utilities/url.md"},a=i("",7),n=[a];function s(c,l,u,p,d,h){return o(),e("div",null,n)}const f=t(r,[["render",s]]);export{_ as __pageData,f as default};

@@ -1,1 +1,0 @@
-import{_ as t,c as e,o,a1 as n}from"./chunks/framework.BlxYlo1f.js";const f=JSON.parse('{"title":"Fonts","description":"","frontmatter":{},"headers":[],"relativePath":"helpers/fonts.md","filePath":"helpers/fonts.md"}'),a={name:"helpers/fonts.md"},r=n("",7),i=[r];function s(c,l,p,d,u,h){return o(),e("div",null,i)}const _=t(a,[["render",s]]);export{f as __pageData,_ as default};
