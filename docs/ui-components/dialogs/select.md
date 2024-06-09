@@ -1,17 +1,72 @@
 # Select
 
-:::warning
-**Note:** Work is in progress 🚧
-:::
+The `select` ui component in Acode provides a user-friendly and customizable way to present a select dialog, allowing users to choose one or more options.
 
-We are currently working on this section to provide you with detailed and comprehensive information about how Acode plugins work. Please check back soon for updates!
+## Usage
 
-## Contribute to the Documentation
+To use the `select` component in your Acode plugin, you can require it using the following code:
 
-We welcome contributions from the community! If you would like to help improve this documentation, please visit our [GitHub repository](https://github.com/bajrangCoder/acode-plugin-docs) and follow the contribution guidelines.
+```javascript
+const select = acode.require('select');
+```
 
-:::tip
-You can suggest changes, add new content, or improve existing sections. Every bit of help is appreciated! 🤗
-:::
+Once you have the `select` component, you can create an instance with the following syntax:
 
-For more information, see official [Guide](https://acode.app/plugin-docs).
+```javascript
+const mySelect = await select(
+  'My Title',          // Title of the select menu
+  options,             // Array of options or strings representing the options
+  opt                  // Additional options or boolean for rejectOnCancel
+);
+```
+
+## Parameters
+
+### `title (string):`
+A string that will be displayed as the title of the select menu.
+
+### `options (Array\<Array or string>):`
+An array representing the options in the select menu. Each array should have a `value`, `text`, `icon`, and `disable` property.
+
+### `opt (SelectOptions | boolean):`
+An object or boolean that allows additional functionality to be added to the select menu.
+
+### SelectOptions
+
+- **hideOnSelect (boolean):**
+  - A boolean that specifies whether the select menu will hide when an option is selected.
+
+- **textTransform (boolean):**
+  - A boolean that specifies whether the text of the options should be transformed (e.g., to uppercase).
+
+- **default (string):**
+  - A string that represents the default selected option.
+
+- **onCancel (Function):**
+  - A function that will be called when the user cancels the select menu.
+
+- **onHide (Function):**
+  - A function that will be called when the select menu is hidden.
+
+## Example
+
+```javascript:line-numbers
+const select = acode.require('select');
+const options = [
+  ['option1', 'Option 1', 'icon1', true],
+  ['option2', 'Option 2', 'icon2', false],
+];
+// Or 
+// simple one 
+// const options = ['Option 1', 'Option 2']
+const opt = {
+  onCancel: () => window.toast('Cancel Clicked', 3000),
+  hideOnSelect: true,
+  textTransform: true,
+  default: 'option2',
+};
+
+const mySelect = await select('My Title', options, opt);
+```
+
+In this example, the select menu will have two options: "Option 1" and "Option 2" with their respective values, icons, and disable property. The `opt` parameter allows the user to cancel the selection, the menu will hide on selection, the text will be transformed to uppercase, and the default option will be 'option2'.

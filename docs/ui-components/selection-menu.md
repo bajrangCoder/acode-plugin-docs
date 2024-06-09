@@ -1,17 +1,30 @@
 # Selection Menu
 
-:::warning
-**Note:** Work is in progress 🚧
-:::
+The Selection Menu in Acode appears when you select any text within the editor. This UI component allows you to enhance the functionality of text selection by adding custom actions to the selection menu.
 
-We are currently working on this section to provide you with detailed and comprehensive information about how Acode plugins work. Please check back soon for updates!
+## Methods
 
-## Contribute to the Documentation
+### `add(onclick: () => void, text: string, mode: 'selected' | 'all', readOnly: boolean)`
 
-We welcome contributions from the community! If you would like to help improve this documentation, please visit our [GitHub repository](https://github.com/bajrangCoder/acode-plugin-docs) and follow the contribution guidelines.
+The `add` method allows you to add new items to the selection menu. It takes the following parameters:
 
-:::tip
-You can suggest changes, add new content, or improve existing sections. Every bit of help is appreciated! 🤗
-:::
+- **onclick**: A function that gets executed when the menu item is clicked.
+- **text**: The icon or text to display in the menu.
+- **mode**: Specifies when this item should be shown in the selection menu. The possible values are:
+  - `'selected'`: Show when some text is selected.
+  - `'all'`: Show regardless of text selection.
+- **readOnly**: A boolean value that determines whether the item should be shown in read-only mode.
 
-For more information, see official [Guide](https://acode.app/plugin-docs).
+### Example
+
+```javascript
+const selectionMenu = acode.require('selectionMenu');
+
+const onclick = () => {
+  // Action to perform when the menu item is clicked
+  console.log('Menu item clicked!');
+};
+
+// Adding a new item to the selection menu
+selectionMenu.add(onclick, 'Hi', 'all');
+```

@@ -1,17 +1,46 @@
 # Toast
 
-:::warning
-**Note:** Work is in progress 🚧
+This ui component help in showing toast messages for given time interval.
+
+## Usage
+
+To use the `toast` component in your Acode plugin, you can require it using the following code:
+
+```javascript
+const toast = acode.require('toast');
+```
+
+Once you have the `toast` component, you can use it with the following syntax:
+
+```javascript
+toast('Hello, World!', 3000);
+```
+
+:::info 
+You can also use toast function directly from the global object without requiring it using acode.
+For eg:
+```javascript
+window.toast('Hello, World!', 3000);
+```
 :::
 
-We are currently working on this section to provide you with detailed and comprehensive information about how Acode plugins work. Please check back soon for updates!
+## Parameters
 
-## Contribute to the Documentation
+- **msg (string):**
+  - The message to be displayed in the toast.
+  
+- **milliSecond (number):**
+  - The duration in milliseconds for which the toast should be displayed.
 
-We welcome contributions from the community! If you would like to help improve this documentation, please visit our [GitHub repository](https://github.com/bajrangCoder/acode-plugin-docs) and follow the contribution guidelines.
+## Example
 
-:::tip
-You can suggest changes, add new content, or improve existing sections. Every bit of help is appreciated! 🤗
-:::
+```javascript:line-numbers
+const toast = acode.require('toast');
 
-For more information, see official [Guide](https://acode.app/plugin-docs).
+toast('Hello, World!', 3000);
+
+// or 
+window.toast('Hello, World!', 3000);
+```
+
+This will display the message "Hello, World!" for 3 seconds (3000 milliseconds).
