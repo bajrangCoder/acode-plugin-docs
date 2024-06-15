@@ -32,6 +32,10 @@ The `plugin.json` file is a crucial component of every Acode plugin, serving as 
 ## 8. **minVersionCode:**
    - Minimum Acode version code required to run the plugin. The plugin will be available only for Acode versions greater than or equal to the specified code.
 
+:::info 
+You can simply use `290`, as this option became available in that version. If you are using the latest Acode plugin API, specify the corresponding version.
+:::
+
 ## 9. **price:**
    - Price of the plugin in INR (Indian Rupees). If set to 0 or omitted, the plugin is free. This attribute allows for monetization of plugins with a defined price range.
 
