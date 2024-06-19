@@ -90,5 +90,5 @@ function listener(){
   console.log("user has switched a file")
 }
 
-editorManager.editor.on("switch-file", listener) // listens to file switch event
+editorManager.on("switch-file", listener) // listens to file switch event
 ```
