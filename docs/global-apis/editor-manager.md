@@ -2,7 +2,7 @@
 
 ## `window.editorManager` or `editorManager`
 
-Ther `editorManager` allows to interact with the Editor Instance and listen to various events of Acode app with the help of various methods and Properties. Basically for interacting with the opened files and tabs.
+The `editorManager` allows to interact with the Editor Instance and listen to various events of Acode app with the help of various methods and Properties. Basically for interacting with the opened files and tabs.
 
 ## Methods and Properties
 
