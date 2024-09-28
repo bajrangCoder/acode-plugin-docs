@@ -250,6 +250,10 @@ export default defineConfig({
         {
           text: "Command Palette",
           link: "/tutorials/command-palette"
+        },
+        {
+          text: "How to run java",
+          link: "/tutorials/how-to-run-java"
         }
       ]
     },

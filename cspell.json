@@ -8,6 +8,6 @@
   ],
   "dictionaryDefinitions": [],
   "dictionaries": ["en"],
-  "ignoreWords": ["Acode", "Ace", "plugin", "npm", "preconfigured", "Termux", "onsave", "onhide", "sidenav", "rgba", "mymode", "extname"],
+  "ignoreWords": ["Acode", "Ace", "plugin", "npm", "preconfigured", "Termux", "onsave", "onhide", "sidenav", "rgba", "mymode", "extname", "acodex", "javac"],
   "allowCompoundWords": false
 }
