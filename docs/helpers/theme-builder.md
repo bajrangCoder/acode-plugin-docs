@@ -1,17 +1,37 @@
 # Theme Builder
 
-:::warning
-**Note:** Work is in progress 🚧
-:::
+**Theme Builder**
 
-We are currently working on this section to provide you with detailed and comprehensive information about how Acode plugins work. Please check back soon for updates!
+**Introduction**
 
-## Contribute to the Documentation
+To create a new theme for your application, you'll need to utilize the `ThemeBuilder` class provided by the `acode` library. This class offers a straightforward way to customize various aspects of your theme, from primary and secondary colors to font styles and more.
 
-We welcome contributions from the community! If you would like to help improve this documentation, please visit our [GitHub repository](https://github.com/bajrangCoder/acode-plugin-docs) and follow the contribution guidelines.
+**Basic Usage**
 
-:::tip
-You can suggest changes, add new content, or improve existing sections. Every bit of help is appreciated! 🤗
-:::
+1. **Import the `ThemeBuilder` class:**
+   ```javascript
+   const ThemeBuilder = acode.require('themeBuilder');
+   ```
+2. **Create a new theme instance:**
+   ```javascript
+   const myTheme = new ThemeBuilder("MyDarkTheme", "dark");
+   ```
+   * **Theme Name:** The first argument, `"MyDarkTheme"`, is the name of your theme. It should be a descriptive name that reflects the theme's style.
+   * **Theme Mode:** The second argument, `"dark"`, specifies the base mode of the theme (either "light" or "dark").
 
-For more information, see official [Guide](https://acode.app/plugin-docs).
+3. **Customize theme properties:**
+   ```javascript
+   myTheme.primaryColor = "#333";
+   myTheme.secondaryColor = "#666";
+   // ... other theme property customizations
+   ```
+   You can customize various theme properties, such as:
+   * `primaryColor`
+   * `secondaryColor`
+   * `textColor`
+   * `backgroundColor`
+   * `fontFamily`
+   * `fontSize`
+   * `fontWeight`
+   * // ... and many more
+
