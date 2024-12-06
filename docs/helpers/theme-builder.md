@@ -2,7 +2,7 @@
 
 ### Introduction
 
-The `ThemeBuilder` class from the `acode` library provides a comprehensive solution for creating and customizing themes in your application. It offers granular control over various UI elements, colors, and styles.
+The `ThemeBuilder` api from the `acode` core libraries  provides a solution for creating and customizing themes in Acode . It offers control over various UI elements, colors, and styles.
 
 ### Basic Usage
 
