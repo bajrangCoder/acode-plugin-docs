@@ -1,17 +1,45 @@
-# Fonts
+# Acode Fonts Module
 
-:::warning
-**Note:** Work is in progress 🚧
-:::
+A straightforward API for managing fonts in your Acode project.
 
-We are currently working on this section to provide you with detailed and comprehensive information about how Acode plugins work. Please check back soon for updates!
+## Quick Start
 
-## Contribute to the Documentation
+```javascript
+const fonts = acode.require('fonts');
+```
 
-We welcome contributions from the community! If you would like to help improve this documentation, please visit our [GitHub repository](https://github.com/bajrangCoder/acode-plugin-docs) and follow the contribution guidelines.
+## Core Methods
 
-:::tip
-You can suggest changes, add new content, or improve existing sections. Every bit of help is appreciated! 🤗
-:::
+### `add(name, css)`
+Adds a new font to your project.
 
-For more information, see official [Guide](https://acode.app/plugin-docs).
+**Parameters:**
+- `name`: Unique identifier for the font
+- `css`: CSS `@font-face` declaration
+
+**Example:**
+```javascript
+fonts.add(
+  'Developer Mono', 
+  `@font-face {
+    font-family: 'Developer Mono';
+    src: url('/fonts/devmono.woff2') format('woff2');
+    font-weight: 400;
+  }`
+);
+```
+
+### `get(name)`
+Retrieves a specific font's details.
+
+**Returns:** Font object with `name` and `css` properties
+
+```javascript
+const font = fonts.get('Developer Mono');
+```
+
+### `getNames()`
+Lists all available font names.
+
+```javascript
+const fontList = fonts.getNames();

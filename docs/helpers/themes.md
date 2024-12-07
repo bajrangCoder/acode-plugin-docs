@@ -1,17 +1,44 @@
-# Themes
+# Acode Theme Management
 
-:::warning
-**Note:** Work is in progress 🚧
-:::
+Acode provides a flexible and intuitive module for managing themes, enabling developers to seamlessly add, retrieve, update, and list themes within their project.
 
-We are currently working on this section to provide you with detailed and comprehensive information about how Acode plugins work. Please check back soon for updates!
+## API Overview
 
-## Contribute to the Documentation
+```javascript
+const themes = acode.require('themes');
+```
 
-We welcome contributions from the community! If you would like to help improve this documentation, please visit our [GitHub repository](https://github.com/bajrangCoder/acode-plugin-docs) and follow the contribution guidelines.
+## Methods
 
-:::tip
-You can suggest changes, add new content, or improve existing sections. Every bit of help is appreciated! 🤗
-:::
+### `add(theme: ThemeBuilder)`
 
-For more information, see official [Guide](https://acode.app/plugin-docs).
+Adds a new theme to the theme collection.
+
+**Parameters:**
+- `theme` (required): An instance of ThemeBuilder defining the theme's properties
+
+**Example:**
+```javascript
+const theme = new ThemeBuilder('Modern Dark', 'dark');
+themes.add(theme);
+```
+
+### `get(name: string)`
+
+Retrieves a specific theme by its name.
+
+**Parameters:**
+- `name` (required): The unique name of the theme to retrieve
+
+**Returns:** 
+- ThemeBuilder instance representing the requested theme
+
+**Example:**
+```javascript
+const theme = themes.get('Modern Dark');
+```
+
+### `update(theme: ThemeBuilder)`
+
+Updates an existing theme in the theme collection.
+
