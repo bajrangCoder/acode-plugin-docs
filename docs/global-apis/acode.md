@@ -189,6 +189,6 @@ Installs an Acode plugin from registry with its id by the consent of user.
 await acode.installPlugin("com.example.pluginid", "mypluin.id");
 ```
 
-:::note
+::: info
 This api is added in `v1.10.6` , versionCode: `954`
 :::
