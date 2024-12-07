@@ -27,7 +27,7 @@ The `openFolder` function accepts two parameters:
 ```javascript:line-numbers
 const openFolder = acode.require('openFolder');
 const options = {
-  nam: 'My Documents',
+  name: 'My Documents',
   id: 'folder-1',
   saveState: false,
   reloadOnResume: false,
