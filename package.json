@@ -6,8 +6,7 @@
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
-    "spellcheck": "cspell '**/*.{md,mts}'"
+    "docs:preview": "vitepress preview"
   },
   "keywords": [],
   "author": "",
