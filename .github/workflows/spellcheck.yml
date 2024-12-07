@@ -13,16 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout Actions Repository
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Check spelling
+        uses: crate-ci/typos@master
         with:
-          node-version: '20'
-
-      - name: Install cspell
-        run: npm install -g cspell
-
-      - name: Run spell check
-        run: cspell "**/*.{md,mts}"
+          config: ./_typos.toml
