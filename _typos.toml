@@ -1,0 +1,8 @@
+[default]
+check-filename = true
+
+[files]
+extend-exclude = [
+    "node_modules",
+    ".vscode"
+]
