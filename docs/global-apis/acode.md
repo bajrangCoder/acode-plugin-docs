@@ -178,3 +178,17 @@ Later you can use the icon by adding to class name my-icon to an element.
 ### `toInternalUrl(url: string): Promise<string>`
 
 When making Ajax or fetch requests, you need to convert file:// URLs to internal URLs. This method do it for you.
+
+### `installPlugin(pluginId: string, installerPluginName: string): Promise<void>`
+
+Installs an Acode plugin from registry with its id by the consent of user.
+
+**Example:**
+
+```js
+await acode.installPlugin("com.example.pluginid", "mypluin.id");
+```
+
+:::note
+This api is added in `v1.10.6` , versionCode: `954`
+:::
