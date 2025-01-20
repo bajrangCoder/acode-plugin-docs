@@ -4,10 +4,11 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   lang: "en-US",
   title: "Acode Docs",
-  description: "Community driven detailed acode and its plugin development guide",
+  description:
+    "Community driven detailed acode and its plugin development guide",
   lastUpdated: true,
   cleanUrls: true,
-  head: [['link', { rel: 'icon', href: '/acode.png' }]],
+  head: [["link", { rel: "icon", href: "/acode.png" }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: "/acode.png",
@@ -125,6 +126,10 @@ export default defineConfig({
               link: "/docs/ui-components/toast",
             },
             {
+              text: "Tutorial",
+              link: "/docs/ui-components/tutorial",
+            },
+            {
               text: "Selection Menu",
               link: "/docs/ui-components/selection-menu",
             },
@@ -157,6 +162,18 @@ export default defineConfig({
             {
               text: "OpenFolder",
               link: "/docs/utilities/open-folder",
+            },
+            {
+              text: "Keyboard",
+              link: "/docs/utilities/keyboard",
+            },
+            {
+              text: "CreateKeyboardEvent",
+              link: "/docs/utilities/keyboard-event",
+            },
+            {
+              text: "Window Resize",
+              link: "/docs/utilities/window-resize",
             },
           ],
         },
@@ -210,6 +227,10 @@ export default defineConfig({
               text: "Theme Builder",
               link: "/docs/helpers/theme-builder",
             },
+            {
+              text: "Color",
+              link: "/docs/helpers/color",
+            },
           ],
         },
         {
@@ -238,7 +259,7 @@ export default defineConfig({
               text: "Action Stack",
               link: "/docs/advanced-apis/action-stack",
             },
-  
+
             {
               text: "Intent",
               link: "/docs/advanced-apis/intent",
@@ -249,13 +270,13 @@ export default defineConfig({
       "/tutorials/": [
         {
           text: "Command Palette",
-          link: "/tutorials/command-palette"
+          link: "/tutorials/command-palette",
         },
         {
           text: "How to run java",
-          link: "/tutorials/how-to-run-java"
-        }
-      ]
+          link: "/tutorials/how-to-run-java",
+        },
+      ],
     },
     search: {
       provider: "local",

@@ -1,9 +1,7 @@
-# Acode PLugin Docs
+# Acode Plugin Docs
 
-A community driven acode plugin development guide
-
-> 🚧 work in progress 🚧
+A community-driven development guide for Acode plugins, fully updated with comprehensive documentation and examples for all the latest APIs.
 
 ## Contribution
 
-You can contribute by opening a issue on what you want to add so there will be no conflicts with others works
+Want to help improve these docs? Simply open an issue describing what you'd like to add. This helps avoid conflicts and ensures smooth collaboration between contributors.

@@ -179,7 +179,39 @@ Later you can use the icon by adding to class name my-icon to an element.
 
 When making Ajax or fetch requests, you need to convert file:// URLs to internal URLs. This method do it for you.
 
-### `installPlugin(pluginId: string, installerPluginName: string): Promise<void>`
+### `pushNotification(title: string, message: string, options?: Object)` <Badge type="tip" text="v954+" />
+
+Displays a notification in Acode with a title, message and optional configuration.
+
+The options parameter accepts the following properties:
+
+* `icon?: string` - Icon for the notification. Can be a URL, base64 encoded image, icon class or SVG string
+* `autoClose?: boolean` - Whether notification should auto close. Defaults to true
+* `action?: Function` - Callback function when notification is clicked
+* `type?: string` - Type of notification - can be 'info', 'warning', 'error' or 'success'. Defaults to 'info'
+
+**Example:**
+
+```js
+acode.pushNotification(
+  "Hello",
+  "This is a notification",
+  {
+    icon: "my-icon",
+    autoClose: false,
+    action: () => {
+      console.log("Notification clicked!");
+    },
+    type: "success"
+  }
+);
+```
+
+::: info
+Requires version code `954` or above
+:::
+
+### `installPlugin(pluginId: string, installerPluginName: string): Promise<void>` <Badge type="tip" text="v954+" />
 
 Installs an Acode plugin from registry with its id by the consent of user.
 

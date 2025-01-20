@@ -1,17 +1,66 @@
 # Palette
 
-:::warning
-**Note:** Work is in progress 🚧
-:::
+The Palette component provides an interactive search interface with dynamic suggestions for your Acode plugin. It creates a searchable input field with a dropdown list of options that updates as the user types. This is what used in command palettes, find files etc.
 
-We are currently working on this section to provide you with detailed and comprehensive information about how Acode plugins work. Please check back soon for updates!
+## Importing
 
-## Contribute to the Documentation
+```js
+const palette = acode.require('palette');
+```
 
-We welcome contributions from the community! If you would like to help improve this documentation, please visit our [GitHub repository](https://github.com/bajrangCoder/acode-plugin-docs) and follow the contribution guidelines.
+## Usage
 
-:::tip
-You can suggest changes, add new content, or improve existing sections. Every bit of help is appreciated! 🤗
-:::
+The palette function accepts four parameters to configure its behavior:
 
-For more information, see official [Guide](https://acode.app/plugin-docs).
+```js
+palette(getList, onSelect, placeholder, onRemove);
+```
+
+### Parameters
+
+- `getList` : `() => Array<string|string[]>` - Function that returns an array of options or Promises resolving to options. Called whenever the search input changes.
+
+- `onSelect` : `(value: string) => void` - Callback function executed when the user selects an option. Receives the selected option value.
+
+- `placeholder?` : `string` - Optional text to display in the input field when empty.
+
+- `onRemove?` : `() => void` - Optional callback triggered when the palette is closed/removed.
+
+## Example
+
+Here's a example showing how to create a file search palette:
+
+```js
+const palette = acode.require('palette');
+
+// Generate list of files
+function getFileList() {
+		return [
+				'src/components/header.js',
+				'src/pages/home.js',
+				'src/utils/helpers.js',
+				'package.json',
+				'README.md'
+		];
+}
+
+// Handle file selection
+function handleFileSelect(filePath) {
+		console.log(`Opening file: ${filePath}`);
+		// Add logic to open the selected file
+}
+
+// Create the palette
+palette(
+		getFileList,
+		handleFileSelect,
+		'Search files...'
+);
+```
+
+The palette will automatically handle:
+- Keyboard navigation (arrow keys)
+- Search filtering
+- Selection via enter/click
+- Closing via escape key or clicking outside
+- Proper cleanup on remove
