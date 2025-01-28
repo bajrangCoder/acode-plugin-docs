@@ -1,6 +1,6 @@
 # Acode Plugin Docs
 
-A community-driven development guide for Acode plugins, fully updated with comprehensive documentation and examples for all the latest APIs.
+A development guide for Acode plugins, fully updated with comprehensive documentation and examples for all the latest APIs.
 
 ## Contribution
 
